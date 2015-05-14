@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cine</title>
+	<meta charset="utf-8" />
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+	<style type="text/css">
+		@font-face {
+			font-family: upheaval;
+			src: url(upheaval/Boogaloo-Regular.ttf);
+		}
+
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			background-color: #F7F7F7;
+		}
+		header{
+			background-color: #313131;
+			border-top: .5rem #3FA757 solid;
+			height: 10rem;
+			text-align: center;
+		}
+		header h1{
+			color: #FDFCFC;
+			text-transform: uppercase;
+			font-family: upheaval;
+			font-size: 3rem;
+			margin-top: 1rem;
+			display: inline-block;
+		}
+		nav {
+			background-color: #54C46E;
+			text-align: center;
+		}
+		
+		nav ul {
+			list-style-type: none;
+		}
+
+		nav ul li {
+			display: inline-block;
+			vertical-align: top;
+			width: 192px;
+		}
+		
+		.desc {
+			padding: 24px 22px 19px 22px;
+			background: rgba(0, 0, 0, 0.7);
+			position: relative;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			z-index: 3;
+			color:	white;
+			-webkit-transition: 0.3s;
+			-moz-transition: 0.3s;
+			-o-transition: 0.3s;
+			transition: 0.3s;
+		}
+	</style>
+	<header>
+		<h1>Movie Tweet</h1>
+		<p></p>
+	</header>
+	<nav>
+		<ul>
+			<li>Inicio</li>
+			<li>Estrenos</li>
+			<li>Próximamente</li>
+		</ul>
+	</nav>
+	<section id="main-content">
+		<article id="">
+			<h2>Estrenos</h2>
+			<ul id="lista-peliculas"></ul>
+		</article>
+	</section>
+	<!--
+	<section>
+		<article id="twitter">
+			<a  data-chrome="noheader nofooter" class="twitter-timeline" href="https://twitter.com/search?q=movies" data-widget-id="597273444498198529">Tweets sobre Movies</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		</article>
+	</section>-->
+	<footer>
+		<h2>Contacto</h2>
+	</footer>
+
+	<script type="text/javascript">
+		/*$(function () {
+			$.ajax({
+				type: "GET",
+				dataType: "jsonp",
+				url: "http://getinfomovies.esy.es/royal.php", //Relative or absolute path to response.php 
+				data: {ciudad: "Barranquilla"},
+				jsonpCallback: 'callback',
+				success: function(data) {
+					var elemento;
+					$.each( data["movies"], function( key, movie ) {
+						elemento = `
+							<li>
+								<img src='${movie["image"]}'>
+								<div class="desc">
+									${movie["title"]}
+								</div>
+							</li>`;
+						$("#lista-peliculas").append(elemento);
+					});
+					console.log("asd");
+				}
+			});
+		});*/
+	</script>
+</body>
+</html>
