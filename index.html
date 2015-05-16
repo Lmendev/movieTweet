@@ -35,17 +35,41 @@
 		}
 		nav {
 			background-color: #54C46E;
-			text-align: center;
+			height: 4rem;
+		}
+
+		nav h2{
+			display: none;
 		}
 		
 		nav ul {
-			list-style-type: none;
+			text-align: center;
+			padding-top: 1rem;
 		}
 
 		nav ul li {
+			list-style-type: none;
 			display: inline-block;
-			vertical-align: top;
-			width: 192px;
+			
+			border-right: 2px solid #FDFCFC;
+			padding: 0 1rem;
+		}
+
+		nav ul li:last-child {
+			border: 0;
+			padding-right: 0; 
+		}
+
+		nav ul li a{
+			text-decoration: none;
+			color: #FDFCFC;
+			font-size: 1.2rem;
+			font-family: upheaval;
+			text-transform: uppercase;
+		}
+
+		nav ul li a:hover{
+			color:#EB6D4C;
 		}
 		
 		.desc {
@@ -68,10 +92,11 @@
 		<p></p>
 	</header>
 	<nav>
+		<h2>Navigation</h2>
 		<ul>
-			<li>Inicio</li>
-			<li>Estrenos</li>
-			<li>Próximamente</li>
+			<li><a href="">Inicio</a></li>
+			<li><a href="">Estrenos</a></li>
+			<li><a href="">Próximamente</a></li>
 		</ul>
 	</nav>
 	<section id="main-content">
