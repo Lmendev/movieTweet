@@ -20,8 +20,8 @@
 			background-color: #F7F7F7;
 		}
 		header{
-			background-color: #313131;
-			border-top: .5rem #3FA757 solid;
+			background-color: #4964B5;
+			border-top: .5rem #1E2332 solid;
 			height: 10rem;
 			text-align: center;
 		}
@@ -34,7 +34,7 @@
 			display: inline-block;
 		}
 		nav {
-			background-color: #54C46E;
+			background-color: #313131;
 			height: 4rem;
 		}
 
@@ -86,6 +86,100 @@
 			-o-transition: 0.3s;
 			transition: 0.3s;
 		}
+		
+		figure{
+			position: relative;
+			display: inline-block;
+			overflow: hidden;
+			text-align: center;
+		}
+
+		figcaption{
+			position: absolute;
+			background: black;
+			color: white;
+			padding: 10px 20px;
+			bottom: 0;
+
+			opacity: 0;
+			left: -30%;
+			-webkit-transition: all 0.6s ease;
+			-moz-transition:    all 0.6s ease;
+			-o-transition:      all 0.6s ease;
+		}
+
+		figure:hover figcaption {
+			opacity: .8;
+			left: 0;
+		}
+		.wrapper{
+			width: 80%;
+			margin: 0 auto;
+		}
+		.outer{
+			margin-top: 1.5rem;
+		}
+		
+		#estrenos h2{
+			display: none;
+		}
+		section#estrenos h3{
+			font-size: 1.5rem;
+			background-color: #2E4793;
+			font-family: upheaval;
+			color: #FDFCFC;
+			font-weight: 200;
+			padding-left: 1rem;
+			margin-bottom: 1rem;
+		}
+		#estrenos ul#lista-peliculas{
+			text-align: center;
+		}
+		ul#lista-peliculas li {
+			display: inline-block;
+		}
+		.left{
+			float: left;
+			width: 75%;
+		}
+		.right{
+			float: right;
+			width: 25%;
+		}
+		.clearfloats{
+			clear: both;
+		}
+
+		aside h2{
+			display: none;
+		}
+		
+		footer{
+			background-color: #313131;
+			height: 10rem;
+		}
+	
+		footer h2{
+			display: none;
+		}
+		
+		footer ul.social{
+			text-align: center;
+		}
+		
+		footer ul.social li{
+			display: inline-block;
+			margin-left: .5rem;
+		}
+		footer ul.social li:first-child{
+			margin-left: 0;
+		}
+
+		footer ul.social li a img{
+			width: 3rem;
+		}
+
+
 	</style>
 	<header>
 		<h1>Movie Tweet</h1>
@@ -99,12 +193,93 @@
 			<li><a href="">Próximamente</a></li>
 		</ul>
 	</nav>
-	<section id="main-content">
-		<article id="">
-			<h2>Estrenos</h2>
-			<ul id="lista-peliculas"></ul>
-		</article>
-	</section>
+	
+	
+	<div class="outer wrapper">
+		<div class="left">
+			<section id="estrenos">
+				<h2>Contenido Principal</h2>
+				<article>
+					<h3>Estrenos</h3>
+					<ul id="lista-peliculas">
+							<li>
+								<figure>
+									<img src="http://www.royal-films.com/App/fotos/9476233.jpg" alt="Mad Max: Furia en el Camino">
+									<figcaption>
+										Mad Max: Furia en el Camino
+									</figcaption>
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<img src="http://www.royal-films.com/App/fotos/1328114.jpg" alt="Mad Max: Furia en el Camino 3D">
+									<figcaption>
+										Mad Max: Furia en el Camino 3D
+									</figcaption>
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<img src="http://www.royal-films.com/App/fotos/4730172.jpg" alt="Rapidos y Furiosos 7">
+									<figcaption>
+										Rapidos y Furiosos 7
+									</figcaption>
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<img src="http://www.royal-films.com/App/fotos/3634556.jpg" alt="Trueno y la Casa Magica">
+									<figcaption>
+										Trueno y la Casa Magica
+									</figcaption>
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<img src="http://www.royal-films.com/App/fotos/7607006.jpg" alt="Vengadores: La era de Ultrón">
+									<figcaption>
+										Vengadores: La era de Ultrón
+									</figcaption>
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<img src="http://www.royal-films.com/App/fotos/1729386.jpg" alt="Vengadores: La era de Ultrón 3D">
+									<figcaption>
+										Vengadores: La era de Ultrón 3D
+									</figcaption>
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<img src="http://www.royal-films.com/App/fotos/4722756.jpg" alt="El nuevo exótico hotel Marigold (VIP)">
+									<figcaption>
+										El nuevo exótico hotel Marigold (VIP)
+									</figcaption>
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<img src="http://www.royal-films.com/App/fotos/8692040.jpg" alt="Vengadores: La era de Ultrón | VIP">
+									<figcaption>
+										Vengadores: La era de Ultrón | VIP
+									</figcaption>
+								</figure>
+							</li></ul>
+				</article>
+			</section>
+		</div>
+		<div class="right">
+			<aside>
+				<h2>Aside</h2>
+				<a href="http://www.adfreeblog.org/" target="_blank">
+				<img src="http://www.adfreeblog.org/adfreesite_button.jpg"></a>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet dolorem blanditiis ad perferendis, labore delectus, facere mollitia eius distinctio voluptates aliquid doloremque fugiat est eum. Doloremque aut aperiam enim voluptatibus.</p>
+			</aside>
+		</div>
+		<div class="clearfloats"></div> 
+	</div>
+
 	<!--
 	<section>
 		<article id="twitter">
@@ -113,12 +288,43 @@
 		</article>
 	</section>-->
 	<footer>
-		<h2>Contacto</h2>
+		<h2>footer</h2>
+		
+
+		<ul class="social">
+			<li>
+				<a href="http://facebook.com/lmendoza1992" target="_blank">
+					<img src="img/social/facebook.png" alt="facebook social image">
+				</a>
+			</li>
+			<li>
+				<a href="http://twitter.com/lmendoza92" target="_blank">
+					<img src="img/social/twitter.png" alt="twitter social image">
+				</a>
+			</li>
+			<li>
+				<a href="http://plus.google.com/+LuisAntonioMendozaMarriaga" target="_blank">
+					<img src="img/social/google-plus.png" alt="google plus social image">
+				</a>
+			</li>
+			<li>
+				<a href="http://github.com/lmendoza92" target="_blank">
+					<img src="img/social/github.png" alt="github social image">
+				</a>
+			</li>
+			<li>
+				<a href="http://co.linkedin.com/in/lmendoza92" target="_blank">
+					<img src="img/social/linkedin.png" alt="linkedin social image">
+				</a>
+			</li>
+		</ul>
+
+
 	</footer>
 
 	<script type="text/javascript">
-		/*$(function () {
-			$.ajax({
+		$(function () {
+			/*$.ajax({
 				type: "GET",
 				dataType: "jsonp",
 				url: "http://getinfomovies.esy.es/royal.php", //Relative or absolute path to response.php 
@@ -129,17 +335,18 @@
 					$.each( data["movies"], function( key, movie ) {
 						elemento = `
 							<li>
-								<img src='${movie["image"]}'>
-								<div class="desc">
-									${movie["title"]}
-								</div>
+								<figure>
+									<img src="${movie['image']}" alt="${movie['title']}" />
+									<figcaption>
+										${movie['title']}
+									</figcaption>
+								</figure>
 							</li>`;
 						$("#lista-peliculas").append(elemento);
 					});
-					console.log("asd");
 				}
-			});
-		});*/
+			});*/
+		});
 	</script>
 </body>
 </html>
